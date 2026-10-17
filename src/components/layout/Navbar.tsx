@@ -6,9 +6,27 @@ import { servicesNavItems } from '../../data/navigationData';
 export const Navbar: React.FC = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
+  const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const location = useLocation();
 
   const isServicesActive = location.pathname.startsWith('/service');
+
+  const handleMouseEnter = () => {
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+      timeoutRef.current = null;
+    }
+    setDropdownOpen(true);
+  };
+
+  const handleMouseLeave = () => {
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+    }
+    timeoutRef.current = setTimeout(() => {
+      setDropdownOpen(false);
+    }, 300);
+  };
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -17,7 +35,10 @@ export const Navbar: React.FC = () => {
       }
     };
     document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+      if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    };
   }, []);
 
   // Close dropdown on route change
@@ -44,9 +65,9 @@ export const Navbar: React.FC = () => {
       {/* Services Dropdown */}
       <div
         ref={dropdownRef}
-        className="relative flex items-center gap-1 group"
-        onMouseEnter={() => setDropdownOpen(true)}
-        onMouseLeave={() => setDropdownOpen(false)}
+        className="relative flex items-center gap-1 group py-2"
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
       >
         <NavLink
           to="/service"
@@ -66,51 +87,59 @@ export const Navbar: React.FC = () => {
         >
           <ChevronDown
             className={`w-4 h-4 transition-transform duration-200 ${
-              dropdownOpen ? 'rotate-180' : ''
+              dropdownOpen ? 'rotate-180' : 'group-hover:rotate-180'
             }`}
           />
         </button>
 
-        {/* Dropdown Menu (Two Columns) */}
+        {/* Dropdown Menu Wrapper (Continuous hover tunnel with zero gap & invisible bridge) */}
         <div
-          className={`absolute left-0 top-full w-[480px] bg-[#040A0A] border border-gray-800 shadow-2xl rounded-md z-30 pt-3 pb-2 transition-all duration-200 mt-2 ${
-            dropdownOpen ? 'opacity-100 visible' : 'opacity-0 invisible pointer-events-none'
+          className={`absolute left-0 top-full pt-2 w-[480px] z-50 transition-all duration-150 before:content-[''] before:absolute before:-top-3 before:left-0 before:w-full before:h-3 ${
+            dropdownOpen
+              ? 'opacity-100 visible pointer-events-auto'
+              : 'opacity-0 invisible pointer-events-none group-hover:opacity-100 group-hover:visible group-hover:pointer-events-auto'
           }`}
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
         >
-          <div className="grid grid-cols-2 divide-x divide-gray-800">
-            <div className="py-1">
-              {leftColumnServices.map((service) => (
-                <NavLink
-                  key={service.href}
-                  to={service.href}
-                  className={({ isActive }) =>
-                    `block px-4 py-2 text-sm transition ${
-                      isActive
-                        ? 'bg-[var(--color-primary)] text-black font-semibold'
-                        : 'text-gray-200 hover:bg-[var(--color-primary)] hover:text-black'
-                    }`
-                  }
-                >
-                  {service.label}
-                </NavLink>
-              ))}
-            </div>
-            <div className="py-1">
-              {rightColumnServices.map((service) => (
-                <NavLink
-                  key={service.href}
-                  to={service.href}
-                  className={({ isActive }) =>
-                    `block px-4 py-2 text-sm transition ${
-                      isActive
-                        ? 'bg-[var(--color-primary)] text-black font-semibold'
-                        : 'text-gray-200 hover:bg-[var(--color-primary)] hover:text-black'
-                    }`
-                  }
-                >
-                  {service.label}
-                </NavLink>
-              ))}
+          <div className="bg-[#040A0A] border border-gray-800 shadow-2xl rounded-md py-2">
+            <div className="grid grid-cols-2 divide-x divide-gray-800">
+              <div className="py-1">
+                {leftColumnServices.map((service) => (
+                  <NavLink
+                    key={service.href}
+                    to={service.href}
+                    onClick={() => setDropdownOpen(false)}
+                    className={({ isActive }) =>
+                      `block px-4 py-2 text-sm transition ${
+                        isActive
+                          ? 'bg-[var(--color-primary)] text-black font-semibold'
+                          : 'text-gray-200 hover:bg-[var(--color-primary)] hover:text-black'
+                      }`
+                    }
+                  >
+                    {service.label}
+                  </NavLink>
+                ))}
+              </div>
+              <div className="py-1">
+                {rightColumnServices.map((service) => (
+                  <NavLink
+                    key={service.href}
+                    to={service.href}
+                    onClick={() => setDropdownOpen(false)}
+                    className={({ isActive }) =>
+                      `block px-4 py-2 text-sm transition ${
+                        isActive
+                          ? 'bg-[var(--color-primary)] text-black font-semibold'
+                          : 'text-gray-200 hover:bg-[var(--color-primary)] hover:text-black'
+                      }`
+                    }
+                  >
+                    {service.label}
+                  </NavLink>
+                ))}
+              </div>
             </div>
           </div>
         </div>
