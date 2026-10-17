@@ -29,12 +29,12 @@ export const Navbar: React.FC = () => {
   const rightColumnServices = servicesNavItems.slice(6);
 
   return (
-    <nav className="hidden md:flex space-x-6 items-center">
+    <nav className="hidden md:flex space-x-7 items-center">
       <NavLink
         to="/about-us"
         className={({ isActive }) =>
-          `text-lg font-medium transition ${
-            isActive ? 'text-[var(--color-primary)]' : 'text-gray-800 hover:text-[var(--color-primary)]'
+          `text-base font-medium transition ${
+            isActive ? 'text-[var(--color-primary)]' : 'text-white hover:text-[var(--color-primary)]'
           }`
         }
       >
@@ -50,8 +50,8 @@ export const Navbar: React.FC = () => {
       >
         <NavLink
           to="/service"
-          className={`text-lg font-medium transition ${
-            isServicesActive ? 'text-[var(--color-primary)]' : 'text-gray-800 hover:text-[var(--color-primary)]'
+          className={`text-base font-medium transition ${
+            isServicesActive ? 'text-[var(--color-primary)]' : 'text-white hover:text-[var(--color-primary)]'
           }`}
         >
           Services
@@ -60,7 +60,7 @@ export const Navbar: React.FC = () => {
         <button
           type="button"
           onClick={() => setDropdownOpen((prev) => !prev)}
-          className="text-[var(--color-primary)] cursor-pointer px-1 py-1 focus:outline-none"
+          className="text-[var(--color-primary)] cursor-pointer px-1 py-1 focus:outline-none flex items-center"
           aria-label="Toggle Services Menu"
           aria-expanded={dropdownOpen}
         >
@@ -73,11 +73,11 @@ export const Navbar: React.FC = () => {
 
         {/* Dropdown Menu (Two Columns) */}
         <div
-          className={`absolute left-0 top-full w-[480px] bg-white shadow-xl rounded-md z-30 pt-3 pb-2 transition-all duration-200 ${
+          className={`absolute left-0 top-full w-[480px] bg-[#040A0A] border border-gray-800 shadow-2xl rounded-md z-30 pt-3 pb-2 transition-all duration-200 mt-2 ${
             dropdownOpen ? 'opacity-100 visible' : 'opacity-0 invisible pointer-events-none'
           }`}
         >
-          <div className="grid grid-cols-2 divide-x divide-gray-100">
+          <div className="grid grid-cols-2 divide-x divide-gray-800">
             <div className="py-1">
               {leftColumnServices.map((service) => (
                 <NavLink
@@ -87,7 +87,7 @@ export const Navbar: React.FC = () => {
                     `block px-4 py-2 text-sm transition ${
                       isActive
                         ? 'bg-[var(--color-primary)] text-black font-semibold'
-                        : 'text-gray-700 hover:bg-[var(--color-primary)] hover:text-black'
+                        : 'text-gray-200 hover:bg-[var(--color-primary)] hover:text-black'
                     }`
                   }
                 >
@@ -104,7 +104,7 @@ export const Navbar: React.FC = () => {
                     `block px-4 py-2 text-sm transition ${
                       isActive
                         ? 'bg-[var(--color-primary)] text-black font-semibold'
-                        : 'text-gray-700 hover:bg-[var(--color-primary)] hover:text-black'
+                        : 'text-gray-200 hover:bg-[var(--color-primary)] hover:text-black'
                     }`
                   }
                 >
@@ -119,8 +119,8 @@ export const Navbar: React.FC = () => {
       <NavLink
         to="/career"
         className={({ isActive }) =>
-          `text-lg font-medium transition ${
-            isActive ? 'text-[var(--color-primary)]' : 'text-gray-800 hover:text-[var(--color-primary)]'
+          `text-base font-medium transition ${
+            isActive ? 'text-[var(--color-primary)]' : 'text-white hover:text-[var(--color-primary)]'
           }`
         }
       >
@@ -130,8 +130,8 @@ export const Navbar: React.FC = () => {
       <NavLink
         to="/projects"
         className={({ isActive }) =>
-          `text-lg font-medium transition ${
-            isActive ? 'text-[var(--color-primary)]' : 'text-gray-800 hover:text-[var(--color-primary)]'
+          `text-base font-medium transition ${
+            isActive ? 'text-[var(--color-primary)]' : 'text-white hover:text-[var(--color-primary)]'
           }`
         }
       >
@@ -141,8 +141,8 @@ export const Navbar: React.FC = () => {
       <NavLink
         to="/blogs"
         className={({ isActive }) =>
-          `text-lg font-medium transition ${
-            isActive ? 'text-[var(--color-primary)]' : 'text-gray-800 hover:text-[var(--color-primary)]'
+          `text-base font-medium transition ${
+            isActive ? 'text-[var(--color-primary)]' : 'text-white hover:text-[var(--color-primary)]'
           }`
         }
       >
@@ -152,8 +152,8 @@ export const Navbar: React.FC = () => {
       <NavLink
         to="/contact"
         className={({ isActive }) =>
-          `text-lg font-medium transition ${
-            isActive ? 'text-[var(--color-primary)]' : 'text-gray-800 hover:text-[var(--color-primary)]'
+          `text-base font-medium transition ${
+            isActive ? 'text-[var(--color-primary)]' : 'text-white hover:text-[var(--color-primary)]'
           }`
         }
       >

@@ -8,15 +8,15 @@ export const Header: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-40 bg-white">
-      <nav className="bg-white shadow-md px-4 py-3">
+    <header className="sticky top-0 z-40 bg-[#040A0A]">
+      <nav className="bg-[#040A0A] shadow-md px-4 sm:px-6 lg:px-8 py-3">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           {/* Logo */}
           <Link to="/" className="flex-shrink-0">
             <img
-              src="/assets/images/header/conexlogo.png"
+              src="/assets/images/header/newlogo2_conex.png"
               alt="Conex Logo"
-              className="h-14 w-auto object-contain"
+              className="h-12 md:h-14 w-auto object-contain"
             />
           </Link>
 
@@ -24,10 +24,10 @@ export const Header: React.FC = () => {
           <Navbar />
 
           {/* Contact Info (Desktop) */}
-          <div className="hidden lg:flex items-center space-x-4">
+          <div className="hidden lg:flex items-center space-x-6">
             <a
               href="tel:+919833379941"
-              className="flex items-center space-x-1.5 cursor-pointer text-gray-800 hover:text-[var(--color-primary)] transition"
+              className="flex items-center space-x-2 cursor-pointer text-white hover:text-[var(--color-primary)] transition"
               title="Call India Office"
             >
               <img
@@ -39,7 +39,7 @@ export const Header: React.FC = () => {
             </a>
             <a
               href="tel:+197696987434"
-              className="flex items-center space-x-1.5 cursor-pointer text-gray-800 hover:text-[var(--color-primary)] transition"
+              className="flex items-center space-x-2 cursor-pointer text-white hover:text-[var(--color-primary)] transition"
               title="Call USA Office"
             >
               <img
@@ -56,7 +56,7 @@ export const Header: React.FC = () => {
             id="menu-btn"
             type="button"
             onClick={() => setMobileMenuOpen((prev) => !prev)}
-            className="md:hidden text-gray-800 p-2 focus:outline-none cursor-pointer"
+            className="md:hidden text-white hover:text-[var(--color-primary)] p-2 focus:outline-none cursor-pointer transition"
             aria-label="Toggle Mobile Menu"
             aria-expanded={mobileMenuOpen}
           >

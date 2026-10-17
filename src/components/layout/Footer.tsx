@@ -34,7 +34,7 @@ export const Footer: React.FC = () => {
           <div className="lg:w-1/5 flex justify-center lg:justify-center items-start">
             <Link to="/">
               <img
-                src="/assets/images/footer/conexlogo.png"
+                src="/assets/images/footer/new_conexlogo.png"
                 alt="Conex Logo"
                 className="h-40 w-auto object-contain"
               />

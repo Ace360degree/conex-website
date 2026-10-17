@@ -5,7 +5,7 @@ export const StructuralEngineering: React.FC = () => {
   return (
     <>
       <Seo
-        title="Structural Engineering Support | Innosteelix"
+        title="Structural Engineering Support | Conex"
         description="Practical, design-aligned, and detailing-ready structural engineering support services bridging the gap between design and detailing."
         canonicalUrl="https://innosteelix.com/service/structural-engineering"
       />
@@ -38,7 +38,7 @@ export const StructuralEngineering: React.FC = () => {
             data-aos-easing="linear"
             data-aos-duration="1000"
           >
-            At Innosteelix, our structural engineering support services bridge
+            At Conex, our structural engineering support services bridge
             the gap between design and detailing. Whether it's verifying member
             capacities, resolving connection loads, or optimizing framing
             strategies, our engineering team works in sync with designers and
