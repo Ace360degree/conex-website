@@ -5,9 +5,9 @@ export const CostEffectiveSolutions: React.FC = () => {
   return (
     <>
       <Seo
-        title="Cost-Effective & Professional Steel Detailing Solutions | Conex"
+        title="Cost-Effective & Professional Steel Detailing Solutions | Conex Engineering"
         description="Smart, scalable, and value-driven steel detailing services designed to reduce waste, minimize revisions, and streamline fabrication without inflating project costs."
-        canonicalUrl="https://innosteelix.com/service/cost-effective-and-professional-solutions"
+        canonicalUrl="https://conexengineering.com/service/cost-effective-and-professional-solutions"
       />
 
       {/* Top Section */}
@@ -38,7 +38,7 @@ export const CostEffectiveSolutions: React.FC = () => {
             data-aos-easing="linear"
             data-aos-duration="1000"
           >
-            At Conex, we deliver more than just detailing — we provide
+            At Conex Engineering, we deliver more than just detailing — we provide
             cost-effective, professional solutions designed to reduce waste,
             minimize revisions, and streamline fabrication. Our deep industry
             experience, lean delivery model, and collaborative workflows help

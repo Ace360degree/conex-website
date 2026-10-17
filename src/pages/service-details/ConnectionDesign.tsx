@@ -5,9 +5,9 @@ export const ConnectionDesign: React.FC = () => {
   return (
     <>
       <Seo
-        title="Connection Design for Steel Structures | Conex"
+        title="Connection Design for Steel Structures | Conex Engineering"
         description="Safe, efficient, and code-compliant steel connection design services tailored to loading conditions, project constraints, AISC, and CISC standards."
-        canonicalUrl="https://innosteelix.com/service/connection-design"
+        canonicalUrl="https://conexengineering.com/service/connection-design"
       />
 
       {/* Top Section */}
@@ -38,7 +38,7 @@ export const ConnectionDesign: React.FC = () => {
             data-aos-easing="linear"
             data-aos-duration="1000"
           >
-            At Conex, we offer precise and reliable steel connection
+            At Conex Engineering, we offer precise and reliable steel connection
             design services that ensure structural integrity, fabrication
             feasibility, and code compliance. Our designs are tailored to your
             specific loading conditions, project constraints, and applicable
@@ -267,7 +267,7 @@ export const ConnectionDesign: React.FC = () => {
         </div>
       </section>
 
-      {/* Benefits of Partnering with Conex */}
+      {/* Benefits of Partnering with Conex Engineering */}
       <section className="py-14 px-4 md:px-12 bg-[var(--color-dark)] text-white">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="order-2 md:order-1 space-y-4">
@@ -278,7 +278,7 @@ export const ConnectionDesign: React.FC = () => {
               data-aos-duration="1000"
             >
               Benefits of Partnering <br />
-              with Conex
+              with Conex Engineering
             </h2>
             <ul
               className="list-disc list-inside text-sm md:text-lg space-y-3 text-gray-300 leading-relaxed"

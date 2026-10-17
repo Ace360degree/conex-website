@@ -5,9 +5,9 @@ export const MaterialTakeOff: React.FC = () => {
   return (
     <>
       <Seo
-        title="Material Take-Off (MTO) Services | Conex"
+        title="Material Take-Off (MTO) Services | Conex Engineering"
         description="Accurate Material Take-Off (MTO) services providing precise steel quantity breakdowns directly from drawings or Tekla models for smarter procurement and cost planning."
-        canonicalUrl="https://innosteelix.com/service/material-take-off"
+        canonicalUrl="https://conexengineering.com/service/material-take-off"
       />
 
       {/* Top Section */}
@@ -38,7 +38,7 @@ export const MaterialTakeOff: React.FC = () => {
             data-aos-easing="linear"
             data-aos-duration="1000"
           >
-            At Conex, our Material Take-Off (MTO) services provide precise
+            At Conex Engineering, our Material Take-Off (MTO) services provide precise
             steel quantity breakdowns to support fabrication, procurement, and
             cost planning. Whether extracted manually from drawings or directly
             from Tekla models, our take-offs help avoid overordering, reduce
@@ -192,13 +192,13 @@ export const MaterialTakeOff: React.FC = () => {
         </div>
       </section>
 
-      {/* Why Choose Conex */}
+      {/* Why Choose Conex Engineering */}
       <section className="py-14 px-4 md:px-12 bg-white text-black">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="flex justify-center">
             <img
               src="/assets/images/service/sm/benifits-of-stick-model.png"
-              alt="Why choose Conex"
+              alt="Why choose Conex Engineering"
               className="w-full max-w-lg h-auto object-contain rounded-lg shadow-md"
               data-aos="fade-up"
               data-aos-easing="linear"
@@ -212,7 +212,7 @@ export const MaterialTakeOff: React.FC = () => {
               data-aos-easing="linear"
               data-aos-duration="1000"
             >
-              Why Choose Conex
+              Why Choose Conex Engineering
             </h2>
             <div className="text-sm md:text-lg">
               <ul

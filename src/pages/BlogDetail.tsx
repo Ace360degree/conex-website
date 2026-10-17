@@ -6,9 +6,9 @@ export const BlogDetail: React.FC = () => {
   return (
     <>
       <Seo
-        title="Top 5 Steel Detailing Mistakes That Lead to Fabrication Delays | Conex Blog"
+        title="Top 5 Steel Detailing Mistakes That Lead to Fabrication Delays | Conex Engineering Blog"
         description="Understand the common steel detailing mistakes that cost time and money in fabrication — and how early coordination, accurate dimensions, and quality checks prevent them."
-        canonicalUrl="https://innosteelix.com/blog/steel-detailing-mistake"
+        canonicalUrl="https://conexengineering.com/blog/steel-detailing-mistake"
       />
 
       {/* Top Banner */}

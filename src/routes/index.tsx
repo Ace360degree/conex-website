@@ -20,7 +20,10 @@ import { MaterialTakeOff } from '../pages/service-details/MaterialTakeOff';
 import { ServiceFlow } from '../pages/service-details/ServiceFlow';
 import { Blogs } from '../pages/Blogs';
 import { BlogDetail } from '../pages/BlogDetail';
-import { PlaceholderPage } from '../components/common/PlaceholderPage';
+import { TermsOfUse } from '../pages/legal/TermsOfUse';
+import { PrivacyPolicy } from '../pages/legal/PrivacyPolicy';
+import { CookiePolicy } from '../pages/legal/CookiePolicy';
+import { Disclaimer } from '../pages/legal/Disclaimer';
 
 export const router = createBrowserRouter([
   {
@@ -113,47 +116,19 @@ export const router = createBrowserRouter([
       /* Legal & Policy Routes */
       {
         path: 'terms-of-use',
-        element: (
-          <PlaceholderPage
-            title="Terms of Use"
-            routePath="/terms-of-use"
-            bannerImage="/assets/images/projects/steel-rods.png"
-            category="Legal"
-          />
-        ),
+        element: <TermsOfUse />,
       },
       {
         path: 'privacy-policy',
-        element: (
-          <PlaceholderPage
-            title="Privacy Policy"
-            routePath="/privacy-policy"
-            bannerImage="/assets/images/projects/steel-rods.png"
-            category="Legal"
-          />
-        ),
+        element: <PrivacyPolicy />,
       },
       {
         path: 'cookie-policy',
-        element: (
-          <PlaceholderPage
-            title="Cookie Policy"
-            routePath="/cookie-policy"
-            bannerImage="/assets/images/projects/steel-rods.png"
-            category="Legal"
-          />
-        ),
+        element: <CookiePolicy />,
       },
       {
         path: 'disclaimer',
-        element: (
-          <PlaceholderPage
-            title="Disclaimer"
-            routePath="/disclaimer"
-            bannerImage="/assets/images/projects/steel-rods.png"
-            category="Legal"
-          />
-        ),
+        element: <Disclaimer />,
       },
 
       /* Catch-all redirect to Home */

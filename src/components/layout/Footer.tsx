@@ -35,7 +35,7 @@ export const Footer: React.FC = () => {
             <Link to="/">
               <img
                 src="/assets/images/footer/new_conexlogo.png"
-                alt="Conex Logo"
+                alt="Conex Engineering Logo"
                 className="h-40 w-auto object-contain"
               />
             </Link>
@@ -123,8 +123,8 @@ export const Footer: React.FC = () => {
                 alt="Email"
                 className="w-4 h-4 mt-0.5 flex-shrink-0"
               />
-              <a href="mailto:suurabhii.sinha@innosteelix.com" className="underline hover:text-black">
-                suurabhii.sinha@innosteelix.com
+              <a href="mailto:surabhi@conexengineering.com" className="underline hover:text-black">
+                surabhi@conexengineering.com
               </a>
             </p>
 
@@ -134,8 +134,8 @@ export const Footer: React.FC = () => {
                 alt="Email"
                 className="w-4 h-4 mt-0.5 flex-shrink-0"
               />
-              <a href="mailto:mak@innosteelix.com" className="underline hover:text-black">
-                mak@innosteelix.com
+              <a href="mailto:mak@conexengineering.com" className="underline hover:text-black">
+                mak@conexengineering.com
               </a>
             </p>
 
@@ -145,8 +145,8 @@ export const Footer: React.FC = () => {
                 alt="Email"
                 className="w-4 h-4 mt-0.5 flex-shrink-0"
               />
-              <a href="mailto:Info@innosteelix.com" className="underline hover:text-black">
-                Info@innosteelix.com
+              <a href="mailto:Info@conexengineering.com" className="underline hover:text-black">
+                info@conexengineering.com
               </a>
             </p>
           </div>

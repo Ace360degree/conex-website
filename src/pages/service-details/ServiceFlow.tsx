@@ -94,9 +94,9 @@ export const ServiceFlow: React.FC = () => {
   return (
     <>
       <Seo
-        title="Detailing Process & Service Flow | Conex"
+        title="Detailing Process & Service Flow | Conex Engineering"
         description="Our detailing process from RFQ to fabrication-ready drawings. A structured, quality-driven 8-step workflow ensuring smooth execution and timely delivery."
-        canonicalUrl="https://innosteelix.com/service/service-flow"
+        canonicalUrl="https://conexengineering.com/service/service-flow"
       />
 
       {/* Top Section */}
@@ -127,7 +127,7 @@ export const ServiceFlow: React.FC = () => {
             data-aos-easing="linear"
             data-aos-duration="1000"
           >
-            At Conex, we follow a structured, quality-driven process that
+            At Conex Engineering, we follow a structured, quality-driven process that
             ensures smooth execution, timely delivery, and accurate documentation
             for every project. Whether it’s a basic framing job or a complex
             industrial structure, our approach is designed to minimize delays,

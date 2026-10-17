@@ -6,9 +6,9 @@ export const StructuralSteelDetailing: React.FC = () => {
   return (
     <>
       <Seo
-        title="Structural Steel Detailing Services | Conex"
+        title="Structural Steel Detailing Services | Conex Engineering"
         description="Comprehensive structural steel detailing services transforming design intent into constructible, shop-ready deliverables. Over 15 years of industry experience."
-        canonicalUrl="https://innosteelix.com/service/structural-steel-detailing"
+        canonicalUrl="https://conexengineering.com/service/structural-steel-detailing"
       />
 
       {/* Top Section */}
@@ -39,7 +39,7 @@ export const StructuralSteelDetailing: React.FC = () => {
             data-aos-easing="linear"
             data-aos-duration="1000"
           >
-            Conex provides comprehensive structural steel detailing
+            Conex Engineering provides comprehensive structural steel detailing
             services that transform design intent into constructible, shop-ready
             deliverables. With over 15 years of experience, our team produces
             precise drawings for fabrication, erection, and coordination —

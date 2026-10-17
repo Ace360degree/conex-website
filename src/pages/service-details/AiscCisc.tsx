@@ -5,9 +5,9 @@ export const AiscCisc: React.FC = () => {
   return (
     <>
       <Seo
-        title="AISC & CISC Code-Compliant Steel Detailing | Conex"
+        title="AISC & CISC Code-Compliant Steel Detailing | Conex Engineering"
         description="Code-compliant steel detailing built on AISC (USA) and CISC (Canada) standards for industrial, commercial, and infrastructure structural projects."
-        canonicalUrl="https://innosteelix.com/service/aisc-cisc"
+        canonicalUrl="https://conexengineering.com/service/aisc-cisc"
       />
 
       {/* Top Section */}
@@ -38,7 +38,7 @@ export const AiscCisc: React.FC = () => {
             data-aos-easing="linear"
             data-aos-duration="1000"
           >
-            At Conex, code compliance isn’t optional — it’s a core
+            At Conex Engineering, code compliance isn’t optional — it’s a core
             principle. All our steel detailing, connection design, and drawing
             production processes are aligned with the latest standards from the
             American Institute of Steel Construction (AISC) and the Canadian

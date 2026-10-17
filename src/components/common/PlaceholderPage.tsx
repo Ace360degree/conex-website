@@ -20,7 +20,7 @@ export const PlaceholderPage: React.FC<PlaceholderPageProps> = ({
       <Seo title={title} />
       <PageBanner
         title={title}
-        subtitle={`Conex ${category} — URL: ${routePath}`}
+        subtitle={`Conex Engineering ${category} — URL: ${routePath}`}
         imageSrc={bannerImage}
         showCtas={true}
       />

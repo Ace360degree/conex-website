@@ -6,9 +6,9 @@ export const CheckingServices: React.FC = () => {
   return (
     <>
       <Seo
-        title="Steel Detailing Checking Services | Conex"
+        title="Steel Detailing Checking Services | Conex Engineering"
         description="Our checking services ensure every steel shop drawing and erection plan meets the highest standards of accuracy, compliance, and buildability per AISC/CISC standards."
-        canonicalUrl="https://innosteelix.com/service/checking-services"
+        canonicalUrl="https://conexengineering.com/service/checking-services"
       />
 
       {/* Top Section */}
@@ -39,7 +39,7 @@ export const CheckingServices: React.FC = () => {
             data-aos-easing="linear"
             data-aos-duration="1000"
           >
-            At Conex, our checking services ensure that every steel shop
+            At Conex Engineering, our checking services ensure that every steel shop
             drawing and erection plan meets the highest standards of accuracy,
             compliance, and buildability. Whether created in-house or by third
             parties, we thoroughly review drawings for dimensional correctness,

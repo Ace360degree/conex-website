@@ -18,7 +18,7 @@ export const Certifications: React.FC = () => {
             data-aos="fade-up"
             data-aos-duration="3000"
           >
-            At Conex, every output is compliant with:
+            At Conex Engineering, every output is compliant with:
           </p>
         </div>
 

@@ -5,9 +5,9 @@ export const StickModeling: React.FC = () => {
   return (
     <>
       <Seo
-        title="Stick Modeling for Steel Structures | Conex"
+        title="Stick Modeling for Steel Structures | Conex Engineering"
         description="Fast, clear, early-stage 3D stick modeling services for steel structures allowing early-stage alignment on member positions, sizes, and connection logic."
-        canonicalUrl="https://innosteelix.com/service/stick-modeling"
+        canonicalUrl="https://conexengineering.com/service/stick-modeling"
       />
 
       {/* Top Section */}
@@ -39,7 +39,7 @@ export const StickModeling: React.FC = () => {
             data-aos-easing="linear"
             data-aos-duration="1000"
           >
-            At Conex, we offer 3D stick modeling services to help
+            At Conex Engineering, we offer 3D stick modeling services to help
             engineers, contractors, and fabricators quickly visualize the
             structural layout of a steel project before full detailing begins.
             Stick models provide a fast and lightweight representation of

@@ -8,9 +8,9 @@ export const Blogs: React.FC = () => {
   return (
     <>
       <Seo
-        title="Insights on Steel Detailing, Engineering, and Fabrication | Conex Blog"
-        description="Welcome to the Conex Blog — your source for industry insights, technical tips, and thought leadership in the world of structural steel detailing."
-        canonicalUrl="https://innosteelix.com/blogs"
+        title="Insights on Steel Detailing, Engineering, and Fabrication | Conex Engineering Blog"
+        description="Welcome to the Conex Engineering Blog — your source for industry insights, technical tips, and thought leadership in the world of structural steel detailing."
+        canonicalUrl="https://conexengineering.com/blogs"
       />
 
       {/* Hero Section */}
@@ -20,7 +20,7 @@ export const Blogs: React.FC = () => {
           <div className="md:w-1/2 order-1 md:order-2">
             <img
               src="/assets/images/blogs/working-hand.png"
-              alt="Conex Team"
+              alt="Conex Engineering Team"
               className="w-full h-auto shadow-md object-cover"
               data-aos="fade-left"
               data-aos-easing="linear"
@@ -38,7 +38,7 @@ export const Blogs: React.FC = () => {
               Insights on Steel Detailing, Engineering, and Fabrication
             </h1>
             <p className="mt-4 text-gray-700 leading-relaxed text-base">
-              Welcome to the Conex Blog — your source for industry insights,
+              Welcome to the Conex Engineering Blog — your source for industry insights,
               technical tips, and thought leadership in the world of structural
               steel detailing. Whether you’re a fabricator, engineer, architect,
               or project coordinator, our blog delivers relevant knowledge that

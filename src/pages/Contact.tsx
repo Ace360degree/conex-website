@@ -112,9 +112,9 @@ export const Contact: React.FC = () => {
   return (
     <>
       <Seo
-        title="Contact Us | Conex Steel Detailing"
-        description="Whether you have a steel detailing requirement, a project in early design, or need connection design and checking support — Conex is here to assist. India and USA offices."
-        canonicalUrl="https://innosteelix.com/contact"
+        title="Contact Us | Conex Engineering Steel Detailing"
+        description="Whether you have a steel detailing requirement, a project in early design, or need connection design and checking support — Conex Engineering is here to assist. India and USA offices."
+        canonicalUrl="https://conexengineering.com/contact"
       />
 
       {/* Hero Section */}
@@ -124,7 +124,7 @@ export const Contact: React.FC = () => {
           <div className="md:w-1/2 order-1 md:order-2">
             <img
               src="/assets/images/contact/hand-shake.png"
-              alt="Conex Team"
+              alt="Conex Engineering Team"
               className="w-full h-auto shadow-md object-cover"
               data-aos="fade-left"
               data-aos-easing="linear"
@@ -144,7 +144,7 @@ export const Contact: React.FC = () => {
             <p className="mt-4 text-gray-700 leading-relaxed text-base">
               Whether you have a steel detailing requirement, a project in
               early design, or need connection design and checking support —
-              Conex is here to assist.
+              Conex Engineering is here to assist.
             </p>
             <p className="mt-4 text-gray-700 leading-relaxed text-base">
               Get in touch with our team of experts to discuss your project
@@ -322,7 +322,7 @@ export const Contact: React.FC = () => {
             <p className="text-gray-300 text-lg md:text-xl leading-relaxed">
               Whether you have a steel detailing requirement, a project in
               early design, or need connection design and checking support —
-              Conex is here to assist.
+              Conex Engineering is here to assist.
             </p>
             <p className="text-gray-300 text-lg md:text-xl leading-relaxed">
               Get in touch with our team of experts to discuss your project
@@ -349,7 +349,7 @@ export const Contact: React.FC = () => {
                 India Office<br />(Head Office)
               </h3>
               <p className="text-lg font-semibold text-black">
-                Conex (India) <br />
+                Conex Engineering (India) <br />
                 [Mon–Sat: 10:00 AM – 7:00 PM IST]
               </p>
               <p className="text-base text-gray-900 leading-relaxed">
@@ -363,14 +363,14 @@ export const Contact: React.FC = () => {
                 <i className="fa-brands fa-whatsapp text-lg"></i> +91 98333 79941
               </p>
               <p className="text-base flex items-center gap-2 text-black font-medium">
-                <i className="fa-solid fa-envelope"></i> info@innosteelix.com
+                <i className="fa-solid fa-envelope"></i> info@conexengineering.com
               </p>
             </div>
 
             {/* Embedded Google Map */}
             <div className="w-full md:w-1/2 min-h-[300px] md:h-auto">
               <iframe
-                title="Conex India Office Map"
+                title="Conex Engineering India Office Map"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.159502440223!2d72.855188!3d19.141383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b72f0e24eb8b%3A0x1234567890abcdef!2sVishal%20Industrial%20Estate%2C%20Mumbai!5e0!3m2!1sen!2sin!4v1717680000000!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
@@ -395,7 +395,7 @@ export const Contact: React.FC = () => {
                 U.S. Representative Office
               </h3>
               <p className="text-lg font-semibold text-black">
-                Conex (USA)
+                Conex Engineering (USA)
               </p>
               <p className="text-base text-gray-900 leading-relaxed">
                 1541 W 80th Street, <br />
@@ -408,14 +408,14 @@ export const Contact: React.FC = () => {
                 <i className="fa-brands fa-whatsapp text-lg"></i> +91 98333 79941
               </p>
               <p className="text-base flex items-center gap-2 text-black font-medium">
-                <i className="fa-solid fa-envelope"></i> info@innosteelix.com
+                <i className="fa-solid fa-envelope"></i> info@conexengineering.com
               </p>
             </div>
 
             {/* Embedded Google Map */}
             <div className="w-full md:w-1/2 min-h-[300px] md:h-auto">
               <iframe
-                title="Conex US Representative Office Map"
+                title="Conex Engineering US Representative Office Map"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28047.27368280495!2d-87.6920052346694!3d41.751228821318975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2f9c9be3d4f1%3A0xdc7a88f9be3f1a93!2s1541%20W%2080th%20St%2C%20Chicago%2C%20IL%2060620%2C%20USA!5e1!3m2!1sen!2sin!4v1754302885602!5m2!1sen!2sin"
                 width="100%"
                 height="100%"

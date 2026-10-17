@@ -6,9 +6,9 @@ export const StandardsCompliance: React.FC = () => {
   return (
     <>
       <Seo
-        title="Committed to AISC & CISC Compliance | Conex"
+        title="Committed to AISC & CISC Compliance | Conex Engineering"
         description="Built to global steel standards. Specialized in structural steel detailing, connection design, and drafting solutions supporting AISC and CISC standards."
-        canonicalUrl="https://innosteelix.com/standards-compliance"
+        canonicalUrl="https://conexengineering.com/standards-compliance"
       />
 
       {/* Hero Banner */}

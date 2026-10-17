@@ -5,9 +5,9 @@ export const BuildingInformationModeling: React.FC = () => {
   return (
     <>
       <Seo
-        title="Building Information Modeling (BIM) for Structural Steel | Conex"
+        title="Building Information Modeling (BIM) for Structural Steel | Conex Engineering"
         description="Integrated 3D BIM services for structural steel enabling smarter collaboration, early clash detection, and optimized steel construction workflows."
-        canonicalUrl="https://innosteelix.com/service/building-Information-modeling"
+        canonicalUrl="https://conexengineering.com/service/building-Information-modeling"
       />
 
       {/* Top Section */}
@@ -38,7 +38,7 @@ export const BuildingInformationModeling: React.FC = () => {
             data-aos-easing="linear"
             data-aos-duration="1000"
           >
-            At Conex, we offer integrated Building Information Modeling
+            At Conex Engineering, we offer integrated Building Information Modeling
             (BIM) services to enable smarter collaboration, reduce conflicts,
             and optimize steel construction workflows. Our BIM-ready models are
             created to ensure every connection, member, and detail aligns with
@@ -170,7 +170,7 @@ export const BuildingInformationModeling: React.FC = () => {
         </div>
       </section>
 
-      {/* Why BIM with Conex? */}
+      {/* Why BIM with Conex Engineering? */}
       <section className="py-14 px-4 md:px-12 bg-[var(--color-dark)] text-white">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="order-2 md:order-1 space-y-4">
@@ -181,7 +181,7 @@ export const BuildingInformationModeling: React.FC = () => {
               data-aos-duration="1000"
             >
               Why BIM with <br />
-              Conex?
+              Conex Engineering?
             </h2>
             <ul
               className="list-disc list-inside text-sm md:text-lg space-y-3 text-gray-300 leading-relaxed"

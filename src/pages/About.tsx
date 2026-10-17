@@ -6,9 +6,9 @@ export const About: React.FC = () => {
   return (
     <>
       <Seo
-        title="About Conex | Structural Steel Detailing & Connection Design"
-        description="Founded in 2010, Conex has evolved into a trusted name in structural steel detailing and connection design, with 15+ years of industry experience across commercial and industrial construction projects."
-        canonicalUrl="https://innosteelix.com/about-us"
+        title="About Conex Engineering | Structural Steel Detailing & Connection Design"
+        description="Founded in 2010, Conex Engineering has evolved into a trusted name in structural steel detailing and connection design, with 15+ years of industry experience across commercial and industrial construction projects."
+        canonicalUrl="https://conexengineering.com/about-us"
       />
 
       {/* Hero Banner */}
@@ -39,7 +39,7 @@ export const About: React.FC = () => {
                 data-aos-easing="linear"
                 data-aos-duration="1000"
               >
-                Founded in 2010, Conex has evolved into a trusted name
+                Founded in 2010, Conex Engineering has evolved into a trusted name
                 in structural steel detailing and connection design. What
                 started as a compact, passionate detailing unit has grown
                 into a structured team delivering to global standards, with
@@ -288,7 +288,7 @@ export const About: React.FC = () => {
               data-aos-easing="linear"
               data-aos-duration="1000"
             >
-              “At Conex, we believe detailing is not just about drawing
+              “At Conex Engineering, we believe detailing is not just about drawing
               lines — it’s about understanding structures, solving problems,
               and delivering clarity for the shop floor.
               <br /><br />
@@ -304,7 +304,7 @@ export const About: React.FC = () => {
               data-aos-easing="linear"
               data-aos-duration="1000"
             >
-              — Founder, Conex
+              — Founder, Conex Engineering
             </p>
           </div>
 
@@ -404,7 +404,7 @@ export const About: React.FC = () => {
         </div>
       </section>
 
-      {/* Why Conex? */}
+      {/* Why Conex Engineering? */}
       <section className="bg-[var(--color-dark)] py-16 px-4 text-white">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           {/* Left Image */}
@@ -429,7 +429,7 @@ export const About: React.FC = () => {
               data-aos-easing="linear"
               data-aos-duration="1000"
             >
-              Why Conex?
+              Why Conex Engineering?
             </h2>
             <ul
               className="space-y-3 text-sm md:text-base list-disc list-inside text-gray-200"

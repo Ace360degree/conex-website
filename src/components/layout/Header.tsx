@@ -15,7 +15,7 @@ export const Header: React.FC = () => {
           <Link to="/" className="flex-shrink-0">
             <img
               src="/assets/images/header/newlogo2_conex.png"
-              alt="Conex Logo"
+              alt="Conex Engineering Logo"
               className="h-12 md:h-14 w-auto object-contain"
             />
           </Link>

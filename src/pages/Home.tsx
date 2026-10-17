@@ -13,15 +13,15 @@ export const Home: React.FC = () => {
   return (
     <>
       <Seo
-        title="Home"
-        description="Specialized in structural steel detailing, connection design, and drafting solutions that support fabrication efficiency and construction integrity."
-        canonicalUrl="https://innosteelix.com/"
+        title="Structural Steel Detailing & Engineering | Conex Engineering"
+        description="Conex Engineering specializes in structural steel detailing, connection design, and drafting solutions that support fabrication efficiency and construction integrity."
+        canonicalUrl="https://conexengineering.com/"
       />
 
       {/* Section 1: Hero Carousel */}
       <HeroCarousel />
 
-      {/* Section 2: About Conex */}
+      {/* Section 2: About Conex Engineering */}
       <AboutOverview />
 
       {/* Section 3: Services Overview Grid */}

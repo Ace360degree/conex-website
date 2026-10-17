@@ -7,9 +7,9 @@ export const Projects: React.FC = () => {
   return (
     <>
       <Seo
-        title="Steel Detailing Projects & Case Studies | Conex"
-        description="Every project at Conex is a reflection of our detailing expertise, engineering foresight, and commitment to quality. Explore our featured projects and real-world case studies."
-        canonicalUrl="https://innosteelix.com/projects"
+        title="Steel Detailing Projects & Case Studies | Conex Engineering"
+        description="Every project at Conex Engineering is a reflection of our detailing expertise, engineering foresight, and commitment to quality. Explore our featured projects and real-world case studies."
+        canonicalUrl="https://conexengineering.com/projects"
       />
 
       {/* Hero Banner */}
@@ -40,7 +40,7 @@ export const Projects: React.FC = () => {
                 data-aos-easing="linear"
                 data-aos-duration="1000"
               >
-                Every project at Conex is a reflection of our detailing
+                Every project at Conex Engineering is a reflection of our detailing
                 expertise, engineering foresight, and commitment to quality. Our
                 portfolio spans commercial, industrial, and infrastructure
                 developments — each delivered with precision and in compliance

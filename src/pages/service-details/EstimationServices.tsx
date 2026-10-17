@@ -5,9 +5,9 @@ export const EstimationServices: React.FC = () => {
   return (
     <>
       <Seo
-        title="Structural Steel Estimation Services | Conex"
+        title="Structural Steel Estimation Services | Conex Engineering"
         description="Reliable structural steel estimation services supporting early project planning, tender submissions, and man-hour budgeting with transparent, scope-driven projections."
-        canonicalUrl="https://innosteelix.com/service/estimation-services"
+        canonicalUrl="https://conexengineering.com/service/estimation-services"
       />
 
       {/* Top Section */}
@@ -38,7 +38,7 @@ export const EstimationServices: React.FC = () => {
             data-aos-easing="linear"
             data-aos-duration="1000"
           >
-            At Conex, we provide reliable structural steel estimation
+            At Conex Engineering, we provide reliable structural steel estimation
             services to support early project planning, tender submissions, and
             man-hour budgeting. Our estimates are driven by real-world
             experience in detailing and fabrication — ensuring our clients
@@ -202,13 +202,13 @@ export const EstimationServices: React.FC = () => {
         </div>
       </section>
 
-      {/* Why Conex for Estimation? */}
+      {/* Why Conex Engineering for Estimation? */}
       <section className="py-14 px-4 md:px-12 bg-white text-black">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="flex justify-center">
             <img
               src="/assets/images/service/es/why-innosteelx.png"
-              alt="Why Conex"
+              alt="Why Conex Engineering"
               className="w-full max-w-lg h-auto object-contain rounded-lg shadow-md"
               data-aos="fade-up"
               data-aos-easing="linear"
@@ -222,7 +222,7 @@ export const EstimationServices: React.FC = () => {
               data-aos-easing="linear"
               data-aos-duration="1000"
             >
-              Why Conex for Estimation?
+              Why Conex Engineering for Estimation?
             </h2>
             <div className="text-sm md:text-lg">
               <ul

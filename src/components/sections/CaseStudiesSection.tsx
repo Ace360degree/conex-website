@@ -48,7 +48,7 @@ export const CaseStudiesSection: React.FC = () => {
           href="#download-case-studies"
           onClick={(e) => {
             e.preventDefault();
-            alert('Case Studies PDF will be made available upon request. Please contact info@innosteelix.com.');
+            alert('Case Studies PDF will be made available upon request. Please contact info@conexengineering.com.');
           }}
           className="inline-flex items-center bg-yellow-400 text-black font-semibold px-5 py-2.5 rounded-full hover:bg-yellow-300 transition text-sm cursor-pointer shadow"
           data-aos="fade-up"

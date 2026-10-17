@@ -9,7 +9,7 @@ export const AboutOverview: React.FC = () => {
         <div className="md:w-1/2 w-full">
           <img
             src="/assets/images/home/about.png"
-            alt="About Conex"
+            alt="About Conex Engineering"
             className="w-full rounded-lg shadow-lg object-cover"
             data-aos="fade-up"
             data-aos-easing="linear"
@@ -26,7 +26,7 @@ export const AboutOverview: React.FC = () => {
             data-aos-duration="1000"
           >
             About{' '}
-            <span className="text-[var(--color-primary)]">Conex</span>
+            <span className="text-[var(--color-primary)]">Conex Engineering</span>
           </h2>
 
           <p
@@ -35,7 +35,7 @@ export const AboutOverview: React.FC = () => {
             data-aos-easing="linear"
             data-aos-duration="1000"
           >
-            Since 2010, Conex has provided high-precision steel
+            Since 2010, Conex Engineering has provided high-precision steel
             detailing services for commercial and industrial structures. We
             blend technical accuracy with proactive collaboration, offering
             not just drawings, but design insights, connection reviews, and

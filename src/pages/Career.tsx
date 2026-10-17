@@ -60,9 +60,9 @@ export const Career: React.FC = () => {
   return (
     <>
       <Seo
-        title="Careers at Conex | Build with Us. Grow with Us."
-        description="Careers at Conex. We believe our people are the foundation of our precision. Explore current openings for Tekla modelers, steel detailers, and checkers."
-        canonicalUrl="https://innosteelix.com/career"
+        title="Careers at Conex Engineering | Build with Us. Grow with Us."
+        description="Careers at Conex Engineering. We believe our people are the foundation of our precision. Explore current openings for Tekla modelers, steel detailers, and checkers."
+        canonicalUrl="https://conexengineering.com/career"
       />
 
       {/* Hero Section */}
@@ -72,7 +72,7 @@ export const Career: React.FC = () => {
           <div className="md:w-1/2 order-1 md:order-2">
             <img
               src="/assets/images/career/team-cheer.png"
-              alt="Conex Team"
+              alt="Conex Engineering Team"
               className="w-full h-auto shadow-md object-cover"
               data-aos="fade-left"
               data-aos-easing="linear"
@@ -88,14 +88,14 @@ export const Career: React.FC = () => {
           >
             <h2 className="text-2xl md:text-5xl font-bold text-gray-900">
               Careers at{' '}
-              <span className="text-[var(--color-primary)]">Conex</span>{' '}
+              <span className="text-[var(--color-primary)]">Conex Engineering</span>{' '}
               –<br />
               <span className="text-[var(--color-dark)]">
                 Build with Us. Grow with Us.
               </span>
             </h2>
             <p className="mt-4 text-gray-700 leading-relaxed text-base">
-              At Conex, we believe our people are the foundation of our
+              At Conex Engineering, we believe our people are the foundation of our
               precision. If you're passionate about structural steel, value
               detailing accuracy, and want to work in a quality-first,
               globally focused company — you're in the right place.
@@ -157,7 +157,7 @@ export const Career: React.FC = () => {
         </div>
       </section>
 
-      {/* Why Conex? */}
+      {/* Why Conex Engineering? */}
       <section className="bg-white px-6 py-12">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-8">
           {/* Left: Text Content */}
@@ -169,7 +169,7 @@ export const Career: React.FC = () => {
               data-aos-duration="1000"
             >
               Why{' '}
-              <span className="text-[var(--color-primary)]">Conex</span>?
+              <span className="text-[var(--color-primary)]">Conex Engineering</span>?
             </h2>
             <ul
               className="list-disc pl-5 space-y-3 text-gray-700 text-base"
@@ -195,7 +195,7 @@ export const Career: React.FC = () => {
           <div className="md:w-1/2">
             <img
               src="/assets/images/career/why-inosteelx.png"
-              alt="Conex Office"
+              alt="Conex Engineering Office"
               className="w-full h-auto rounded-md shadow-md object-cover"
               data-aos="fade-up"
               data-aos-easing="linear"
@@ -230,10 +230,10 @@ export const Career: React.FC = () => {
               <i className="fa-solid fa-envelope text-[var(--color-primary)] mr-2"></i>
               Don’t see a role that fits? Send us your resume at{' '}
               <a
-                href="mailto:careers@innosteelix.com"
+                href="mailto:careers@conexengineering.com"
                 className="text-[var(--color-primary)] underline hover:text-yellow-300"
               >
-                careers@innosteelix.com
+                careers@conexengineering.com
               </a>{' '}
               – we’re always open to talent.
             </p>
@@ -268,7 +268,7 @@ export const Career: React.FC = () => {
                         </p>
                       </div>
                       <a
-                        href={`mailto:careers@innosteelix.com?subject=Application%20for%20${encodeURIComponent(
+                        href={`mailto:careers@conexengineering.com?subject=Application%20for%20${encodeURIComponent(
                           job.title
                         )}`}
                         className="text-sm font-semibold text-[var(--color-dark)] underline hover:text-black mt-4 block"
@@ -304,14 +304,14 @@ export const Career: React.FC = () => {
         </div>
       </section>
 
-      {/* Life at Conex */}
+      {/* Life at Conex Engineering */}
       <section className="bg-white pl-3 pr-3 md:pr-8 py-12 text-gray-900">
         <div className="w-full flex flex-col md:flex-row items-center md:items-start gap-8 max-w-7xl mx-auto">
           {/* Left Image */}
           <div className="w-full md:w-1/2">
             <img
               src="/assets/images/career/life-at-innosteelix.png"
-              alt="Life at Conex"
+              alt="Life at Conex Engineering"
               className="w-full h-auto rounded-xl shadow object-cover mx-auto"
               data-aos="fade-up"
               data-aos-easing="linear"
@@ -328,7 +328,7 @@ export const Career: React.FC = () => {
               data-aos-duration="1000"
             >
               Life at{' '}
-              <span className="text-[var(--color-primary)]">Conex</span>
+              <span className="text-[var(--color-primary)]">Conex Engineering</span>
             </h2>
 
             <p
@@ -369,7 +369,7 @@ export const Career: React.FC = () => {
               data-aos-duration="1000"
             >
               “You’re not just another resource here. At{' '}
-              <span className="font-bold">Conex</span>, you’re part of every
+              <span className="font-bold">Conex Engineering</span>, you’re part of every
               structure we help shape.”
             </div>
           </div>
