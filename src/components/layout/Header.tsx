@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
@@ -10,7 +11,7 @@ export const Header: React.FC = () => {
   return (
     <header className="sticky top-0 z-40 bg-[#040A0A]">
       <nav className="bg-[#040A0A] shadow-md px-4 sm:px-6 lg:px-8 py-3">
-        <div className="max-w-7xl mx-auto flex justify-between items-center">
+     <div className="max-w-7xl mx-auto flex items-center">
           {/* Logo */}
           <Link to="/" className="flex-shrink-0">
             <img
@@ -21,22 +22,13 @@ export const Header: React.FC = () => {
           </Link>
 
           {/* Desktop Nav */}
-          <Navbar />
+        {/* Desktop Nav and USA Contact */}
+<div className="hidden lg:flex items-center gap-3 ml-auto">
+  <Navbar />
 
-          {/* Contact Info (Desktop) */}
-          <div className="hidden lg:flex items-center space-x-6">
-            <a
-              href="tel:+919833379941"
-              className="flex items-center space-x-2 cursor-pointer text-white hover:text-[var(--color-primary)] transition"
-              title="Call India Office"
-            >
-              <img
-                src="/assets/images/header/india-flag.svg"
-                className="w-5 h-4 object-contain shadow-xs"
-                alt="India"
-              />
-              <span className="text-sm font-medium whitespace-nowrap">+91 9833379941 / +91 9916001366</span>
-            </a>
+  <div className="flex items-center">
+
+
             <a
               href="tel:+197696987434"
               className="flex items-center space-x-2 cursor-pointer text-white hover:text-[var(--color-primary)] transition"
@@ -47,8 +39,11 @@ export const Header: React.FC = () => {
                 className="w-5 h-4 object-contain shadow-xs"
                 alt="USA"
               />
-              <span className="text-sm font-medium whitespace-nowrap">+1 (976) 9698 7434</span>
+              <span className="text-sm font-medium whitespace-nowrap">
+                +1 (976) 9698 7434
+              </span>
             </a>
+            </div>
           </div>
 
           {/* Mobile Menu Button */}
@@ -60,12 +55,19 @@ export const Header: React.FC = () => {
             aria-label="Toggle Mobile Menu"
             aria-expanded={mobileMenuOpen}
           >
-            {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            {mobileMenuOpen ? (
+              <X className="w-6 h-6" />
+            ) : (
+              <Menu className="w-6 h-6" />
+            )}
           </button>
         </div>
 
         {/* Mobile Menu Drawer */}
-        <MobileMenu isOpen={mobileMenuOpen} onClose={() => setMobileMenuOpen(false)} />
+        <MobileMenu
+          isOpen={mobileMenuOpen}
+          onClose={() => setMobileMenuOpen(false)}
+        />
       </nav>
     </header>
   );
