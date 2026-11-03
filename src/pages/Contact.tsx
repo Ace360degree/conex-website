@@ -357,10 +357,7 @@ export const Contact: React.FC = () => {
                 Goregaon East, Mumbai - 400063
               </p>
               <p className="text-base flex items-center gap-2 text-black font-medium">
-                <i className="fa-solid fa-phone"></i> +91 97696 97434
-              </p>
-              <p className="text-base flex items-center gap-2 text-black font-medium">
-                <i className="fa-brands fa-whatsapp text-lg"></i> +91 98333 79941
+                <i className="fa-brands fa-whatsapp text-lg"></i> +1 (976) 9698 7434
               </p>
               <p className="text-base flex items-center gap-2 text-black font-medium">
                 <i className="fa-solid fa-envelope"></i> info@conexengineering.com
@@ -390,41 +387,6 @@ export const Contact: React.FC = () => {
             data-aos-duration="1000"
           >
             {/* Office Info */}
-            <div className="w-full md:w-1/2 bg-[var(--color-primary)] p-8 space-y-4">
-              <h3 className="text-xl md:text-2xl font-bold text-black">
-                U.S. Representative Office
-              </h3>
-              <p className="text-lg font-semibold text-black">
-                Conex Engineering (USA)
-              </p>
-              <p className="text-base text-gray-900 leading-relaxed">
-                1541 W 80th Street, <br />
-                Chicago, IL 60620, USA
-              </p>
-              <p className="text-base flex items-center gap-2 text-black font-medium">
-                <i className="fa-solid fa-phone"></i> +91 98333 79941
-              </p>
-              <p className="text-base flex items-center gap-2 text-black font-medium">
-                <i className="fa-brands fa-whatsapp text-lg"></i> +91 98333 79941
-              </p>
-              <p className="text-base flex items-center gap-2 text-black font-medium">
-                <i className="fa-solid fa-envelope"></i> info@conexengineering.com
-              </p>
-            </div>
-
-            {/* Embedded Google Map */}
-            <div className="w-full md:w-1/2 min-h-[300px] md:h-auto">
-              <iframe
-                title="Conex Engineering US Representative Office Map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28047.27368280495!2d-87.6920052346694!3d41.751228821318975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2f9c9be3d4f1%3A0xdc7a88f9be3f1a93!2s1541%20W%2080th%20St%2C%20Chicago%2C%20IL%2060620%2C%20USA!5e1!3m2!1sen!2sin!4v1754302885602!5m2!1sen!2sin"
-                width="100%"
-                height="100%"
-                style={{ border: 0, minHeight: '320px' }}
-                allowFullScreen={false}
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </div>
           </div>
         </div>
       </section>
