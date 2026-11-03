@@ -99,14 +99,14 @@ export const Footer: React.FC = () => {
               <span>India: Goregaon East, Mumbai</span>
             </p>
 
-            <p className="flex items-start gap-2 text-sm leading-snug">
+            {/* <p className="flex items-start gap-2 text-sm leading-snug">
               <img
                 src="/assets/images/footer/us-location.svg"
                 alt="USA Representative Office Location"
                 className="w-4 h-4 mt-0.5 flex-shrink-0"
               />
               <span>USA: Chicago, IL</span>
-            </p>
+            </p> */}
 
             <p className="flex items-start gap-2 text-sm leading-snug">
               <img
@@ -114,7 +114,7 @@ export const Footer: React.FC = () => {
                 alt="Telephone"
                 className="w-4 h-4 mt-0.5 flex-shrink-0"
               />
-              <span>+91 9916001366 / +91 9833379941</span>
+              <span>+1 (976) 9698 7434</span>
             </p>
 
             <p className="flex items-start gap-2 text-sm leading-snug">
