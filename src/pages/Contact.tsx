@@ -57,12 +57,11 @@ export const Contact: React.FC = () => {
     }
   };
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     setErrorMsg('');
     setSuccessMsg('');
 
-    // Client-side validations
     if (!formData.name.trim()) {
       setErrorMsg('Please enter your name.');
       return;
@@ -90,12 +89,50 @@ export const Contact: React.FC = () => {
 
     setIsSubmitting(true);
 
-    // Simulate client-side submission (Laravel API integration in Phase 4)
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setSuccessMsg(
-        'Thank you! Your query has been received. Our engineering team will contact you shortly.'
-      );
+    try {
+      let response: Response;
+      if (formData.file) {
+        const payload = new FormData();
+        payload.append('name', formData.name);
+        payload.append('email', formData.email);
+        payload.append('phone', formData.phone);
+        payload.append('company', formData.company);
+        payload.append('subject', formData.subject);
+        payload.append('message', formData.message);
+        payload.append('file', formData.file);
+
+        response = await fetch('/api/contact', {
+          method: 'POST',
+          headers: {
+            Accept: 'application/json',
+          },
+          body: payload,
+        });
+      } else {
+        response = await fetch('/api/contact', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            Accept: 'application/json',
+          },
+          body: JSON.stringify({
+            name: formData.name,
+            email: formData.email,
+            phone: formData.phone,
+            company: formData.company,
+            subject: formData.subject,
+            message: formData.message,
+          }),
+        });
+      }
+
+      const result = await response.json();
+
+      if (!response.ok) {
+        throw new Error(result?.message || 'Unable to submit your message.');
+      }
+
+      setSuccessMsg(result.message || 'Thank you! Your query has been received. Our engineering team will contact you shortly.');
       setFormData({
         name: '',
         email: '',
@@ -106,7 +143,11 @@ export const Contact: React.FC = () => {
         file: null,
       });
       setFileName('');
-    }, 700);
+    } catch (error) {
+      setErrorMsg(error instanceof Error ? error.message : 'Something went wrong. Please try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (

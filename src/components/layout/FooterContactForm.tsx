@@ -27,13 +27,26 @@ export const FooterContactForm: React.FC = () => {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
 
-    // Local UI validation & simulation for Phase 2 (Phase 4 integrates backend API)
-    setTimeout(() => {
-      setLoading(false);
+    try {
+      const response = await fetch('/api/footer-contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+
+      if (!response.ok) {
+        throw new Error(result?.message || 'Failed to submit form.');
+      }
+
       setSubmitted(true);
       setFormData({
         name: '',
@@ -43,7 +56,13 @@ export const FooterContactForm: React.FC = () => {
         message: '',
       });
       setTimeout(() => setSubmitted(false), 5000);
-    }, 600);
+    } catch (error) {
+      const message = error instanceof Error ? error.message : 'Something went wrong';
+      setSubmitted(false);
+      alert(message);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
